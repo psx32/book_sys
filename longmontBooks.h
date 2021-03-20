@@ -1,5 +1,3 @@
-#include "bookStructure.h"
-
 #ifndef LONGMONTBOOKS_H
 #define LONGMONTBOOKS_H
 

@@ -1,19 +1,33 @@
+#include "bookOutput.h"
+#include "stephenKingBooks.h"
+#include "harryPotterBooks.h"
 #include "longmontBooks.h"
 #include "bookStructure.h"
 #include <iostream>
 
-
 int main()
-{		
-	longmontBookA();
+{	
+		
+	int choice{};
 
-	std::cout << "\n";
+	std::cout << "> Enter a number (1-3): ";
+	std::cin >> choice;
+	
+	// Using a switch to choose from
+	// from different books
+	switch(choice)
+	{
+		case 1:	// LONGMONT BOOKS
+			outputLongmont();
+			break;
 
-	longmontBookB();
-
-	std::cout << "\n";
-
-	longmontBookC();
+		case 2: // HARRY POTTER BOOKS
+			outputHarryPotter();
+			break;
+		case 3: // STEPHEN KING BOOKS
+			outputStephenKing();
+			
+	}
 
 	return 0;
 }
